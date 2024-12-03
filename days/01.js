@@ -6,7 +6,7 @@ const main = () => {
 };
 
 const partOne = async () => {
-    const [first, second] = await read(new Parser());
+    const [first, second] = await read(new Parser(), '01');
 
     first.sort((a, b) => a - b);
     second.sort((a, b) => a - b);
@@ -21,7 +21,7 @@ const partOne = async () => {
 };
 
 const partTwo = async () => {
-    const [first, second] = await read(new Parser());
+    const [first, second] = await read(new Parser(), '01');
 
     const counter = new Map();
     
