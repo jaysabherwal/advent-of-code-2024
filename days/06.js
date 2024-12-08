@@ -57,8 +57,6 @@ const partTwoRedone = (results) => {
         const nums = k.split(',').map(num => parseInt(num));
         arr[nums[0]][nums[1]] = '#';
 
-        // printArr(arr);
-
         if (partOne(results) == 'LOOP') {
             loopsCount++;
         }
